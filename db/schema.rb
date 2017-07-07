@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170422133043) do
+ActiveRecord::Schema.define(version: 20170707093704) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -87,6 +87,7 @@ ActiveRecord::Schema.define(version: 20170422133043) do
     t.datetime "updated_at", null: false
     t.string   "main_topic"
     t.text     "bio"
+    t.string   "city"
   end
 
   add_index "profile_translations", ["locale"], name: "index_profile_translations_on_locale", using: :btree
