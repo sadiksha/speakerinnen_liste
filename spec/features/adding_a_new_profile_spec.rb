@@ -18,7 +18,7 @@ describe 'profile adding' do
     fill_in I18n.t(:firstname, scope: 'activerecord.attributes.profile'), with: 'Ada'
     fill_in I18n.t(:lastname, scope: 'activerecord.attributes.profile'), with: 'Lovelace'
     fill_in I18n.t(:twitter, scope: 'activerecord.attributes.profile'), with: '@Lovelace'
-    find(:css, "#city").set("London")
+    find(:css, "#city_en").set("London")
 
     # ToDo: this only works when locale is :en which it obviously always is in the tests?
     select "Cuba", from: I18n.t(:country, scope: 'activerecord.attributes.profile')
