@@ -143,7 +143,9 @@ class ProfilesController < ApplicationController
       :main_topic_de,
       :bio_en,
       :bio_de,
-      translations_attributes: [:id, :bio, :main_topic, :locale],
+      :city_en,
+      :city_de,
+      translations_attributes: [:id, :bio, :main_topic, :city, :locale],
       medialinks_attributes: [:id, :url, :title, :description, :profile_id, :position])
   end
 
