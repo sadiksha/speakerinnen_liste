@@ -94,6 +94,12 @@ class Admin::ProfilesController < Admin::BaseController
       :media_url,
       :medialinks,
       :admin_comment,
+      :bio_de,
+      :bio_en,
+      :main_topic_de,
+      :main_topic_en,
+      :city_de,
+      :city_en,
       translations_attributes: [:id, :bio, :main_topic, :city, :locale])
   end
 

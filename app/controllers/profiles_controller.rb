@@ -22,6 +22,7 @@ class ProfilesController < ApplicationController
       @aggs_languages = @aggs[:lang][:buckets]
       @aggs_cities = @aggs[:city][:buckets]
       @aggs_countries = @aggs[:country][:buckets]
+      binding.pry
     else
       @profiles = profiles_for_index
     end
